@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #222;
+    --text-color : white;
+    --secondary-color : wheat;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins',sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.container{
+    padding: 2.5% 15%;
+}
+
+.main-heading h1{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.seperation-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    width: 85%;
+    color: var(--secondary-color);
+}
+
+.image-container img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(245,222,179,0.6);
+}
+
+.text-section{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.subheading-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 11%;
+}
+
+.sub-text{
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.subheading{
+    text-align: left;
+}
+
+.custom-subheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-subheading .sub-text{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.quote-area{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.quote-text{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+}
+
+.quote-img img{
+    border-radius: 80px !important;
+}
+
+.footer-area{
+    text-align: center;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+@media(max-width:780px){
+    .text-area{
+        font-size: 0.75rem !important;
+    }
+
+    h1{
+        font-size: 1.5rem !important;
+    }
+    .flex{
+        flex-direction: column !important;
+        gap: 25px;
+    }
+
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-text{
+        font-size: 1.25rem;
+    }
+
+    .container{
+        padding: 5% 10%;
+    }
+}
